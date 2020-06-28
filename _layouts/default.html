@@ -30,11 +30,11 @@
 		</div>
 		{% include topbar.html %}
 		<div class="tag_list">
-			<!-- C드라이브 아이콘 표시 -->
+			<!-- C_drive Icon -->
 			<ul id="tag-list">
 				<li><a href="/" ><img src="/assets/img/disk.png" />(C:)</a>
 			<ul>
-				<!-- 폴더 아이콘 표시 -->
+				<!-- Folder Icon -->
 				{% assign tags = site.tags | sort %}
 				{% for tag in tags %}
 				<li><a href="/tag/{{ tag | first | slugify }}/" title="{{ tag[0] | replace:'-', ' ' }}"><img src="/assets/img/folder.ico" />{{ tag[0] | replace:'-', ' ' }}</a></li>
