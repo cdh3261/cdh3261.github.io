@@ -3,7 +3,7 @@ layout: default
 ---
 <ul>
 	{% for post in site.tags[page.tag] %}
-	<!-- 마크다운 파일목록 -->
+	<!-- md files index -->
 		<li><a href="{{  post.url }}" title="{{ post.title }}"><img src="/assets/img/file.ico" title="{{ post.title }}" />{{ post.title }}</a></li>
 	{% endfor %}
 </ul>
