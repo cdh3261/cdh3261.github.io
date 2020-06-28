@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Markdown Test Page"
-tags: Algorithm tag3
+tags: algorithm tag3
 ---
 
 ## Source: [Markdown Test Page](https://github.com/fullpipe/markdown-test-page)
