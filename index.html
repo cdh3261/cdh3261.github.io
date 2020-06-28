@@ -1,6 +1,9 @@
 ---
 layout: default
 ---
+
+<!-- _posts에서 파일 목록 불러오는 것 -->
+
 <ul>
 	{% for post in site.posts %}
 	<li><a href="{{  post.url }}" title="{{ post.title }}"><img src="/assets/img/file.ico" title="{{ post.title }}" />{{ post.title }}</a></li>
