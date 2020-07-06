@@ -1,9 +1,0 @@
-I"œ<h2 id="python-test">Python Test</h2>
-
-<pre><code class="language-python">N = int(input())
-for i in range(N):
-    print(i + 1)
-</code></pre>
-
-<p>123123</p>
-:ET
