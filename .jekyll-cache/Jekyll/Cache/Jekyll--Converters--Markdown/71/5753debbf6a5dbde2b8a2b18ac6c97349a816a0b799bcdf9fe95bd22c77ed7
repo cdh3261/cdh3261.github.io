@@ -1,6 +1,6 @@
-I"r<h2 id="backjoon">BACKJOON</h2>
+I"r<h1 id="backjoon">BACKJOON</h1>
 
-<h3 id="10828스택">10828.스택</h3>
+<h2 id="10828스택">10828.스택</h2>
 
 <pre><code class="language-python">N = int(input())
 stack = []

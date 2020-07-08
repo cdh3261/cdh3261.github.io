@@ -1,0 +1,44 @@
+I"&<h1 id="quick_sort수정-중">Quick_Sort(수정 중)</h1>
+
+<p>대부분의 퀵소트의 경우 pivot 값을 기준으로 좌우 리스트를 정한다.</p>
+
+<p>이 경우 메모리 낭비가 심하다고 생각해(필자는 깔끔한 것을 좋아함) 리스트를 따로 만들지 않고</p>
+
+<p>인덱스 접근으로 풀어보았다.</p>
+
+<p><strong>Python 코드</strong></p>
+
+<pre><code class="language-python">def partition(left, right):
+
+    pivot = nums[(left+right)//2]
+
+    while left &lt;= right:
+        while nums[left] &lt; pivot:
+            left += 1
+        while nums[right] &gt; pivot:
+            right -= 1
+
+        if right &gt;= left: # right, left가 같으면 무한 루프 돈다.#
+            nums[left], nums[right] = nums[right], nums[left]
+            left += 1
+            right -= 1
+
+    return left
+
+
+def Q_Sort(left, right):
+    if left &gt;= right:
+        return
+
+    mid = partition(left, right)
+    Q_Sort(left, mid - 1)
+    Q_Sort(mid, right)
+
+
+N = 10
+nums = [4,2,7,8,3,5,9,1,6,0]
+Q_Sort(0, N-1)
+
+print(nums)
+</code></pre>
+:ET
